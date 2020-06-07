@@ -1,0 +1,117 @@
+.image-div {
+  height: 100%;
+  width: 100%;
+}
+
+.content-div {
+  height: 100%;
+
+  width: 100%;
+
+  background-color: #20201f;
+
+  padding: 0.7rem;
+  overflow: scroll;
+}
+
+.border-div {
+  display: inline-block;
+  width: 50%;
+  height: 90%;
+  background: linear-gradient(to bottom, #00bcf2, #b4a0ff);
+  padding: 1px;
+  color: white;
+}
+
+.event-heading-carousel {
+  font-family: 'Roboto Slab';
+  margin-bottom: 0.2rem;
+  font-weight: 300;
+  font-size: 3em;
+
+  letter-spacing: 0.015em;
+
+  color: #e1dfdd;
+}
+
+.event-description-carousel {
+  font-family: 'Roboto Slab';
+
+  font-weight: 300;
+  font-size: 1.3em;
+
+  letter-spacing: 0.015em;
+
+  color: #e1dfdd;
+}
+
+.carousel-root {
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+  overflow: hidden;
+}
+
+.heading-carousel {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+
+  width: fit-content;
+  margin: 2% auto;
+
+  background: linear-gradient(to right, #00bcf2, #b2a0ff);
+  letter-spacing: 0.015em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 700px) {
+  .mobile-carousel {
+    display: none;
+  }
+  .carousel-root {
+    height: 420px;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop-carousel {
+    display: none;
+  }
+  .carousel {
+    padding-bottom: 50px;
+  }
+  .carousel-indicators li {
+    width: 20px;
+    height: 1px;
+    background: #00bcf2;
+    border: 0.5px solid #00bcf2;
+  }
+  .carousel-indicators .active {
+    background: #b4a0ff;
+    border: 0.5px solid #b4a0ff;
+  }
+}
+
+@media (min-width: 700px) {
+  .carousel-indicators li {
+    height: 8px;
+    width: 8px;
+    margin: 2px;
+    border: 2px solid #00bcf2;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+    background-color: inherit;
+  }
+  .carousel-indicators .active {
+    background: #b4a0ff;
+    border: 2px solid #b4a0ff;
+  }
+  .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 5%;
+  }
+}

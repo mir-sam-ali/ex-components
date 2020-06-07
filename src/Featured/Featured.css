@@ -1,0 +1,122 @@
+.image-div-featured {
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+
+  color: white;
+}
+
+.border-root-featured {
+  background: linear-gradient(to right, #00bcf2, #b4a0ff, #01b295);
+  padding: 4px;
+  border-radius: 6px;
+  color: white;
+}
+
+.carousel-root-featured {
+  display: flex;
+  justify-content: flex-start;
+  height: 45vw;
+  overflow: hidden;
+}
+
+.content-div-featured {
+  height: 100%;
+
+  width: 70%;
+
+  background-color: #20201f;
+}
+
+.featured-heading {
+  padding: 0%;
+  font-family: 'Roboto Slab';
+
+  margin: 4% 0 0 10%;
+  font-size: 7vw;
+  font-weight: 300;
+  background: linear-gradient(to right, #00bcf2, #01b295);
+  letter-spacing: 0.015em;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+
+  letter-spacing: -0.015em;
+}
+
+.button-div-featured-desktop {
+  margin: 7% 0 0 10%;
+}
+
+.button-div-featured-mobile {
+  display: none;
+}
+
+.featured-description {
+  font-family: 'Roboto Slab';
+  padding: 0%;
+  margin: 4% 0 0 10%;
+  font-size: 1.5vw;
+  font-weight: 300;
+  background: linear-gradient(to right, #00bcf2, #01b295);
+  letter-spacing: 0.015em;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: auto;
+  text-align: left;
+
+  letter-spacing: -0.015em;
+}
+
+.image-featured {
+  margin: 40% 4% auto 0;
+}
+
+@media (max-width: 700px) {
+  .carousel-root-featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    min-height: 700px;
+  }
+  .content-div-featured {
+    min-height: 50%;
+    height: auto;
+
+    width: 100%;
+  }
+  .featured-heading {
+    margin: 4% 0 0 7%;
+    font-size: 50px;
+  }
+  .featured-description {
+    margin: 4% 0 0 7%;
+    font-size: 15px;
+  }
+
+  .image-div-featured {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    color: white;
+    padding: 5%;
+  }
+
+  .image-featured {
+    margin: 0 auto;
+  }
+
+  .button-div-featured-desktop {
+    display: none;
+  }
+  .button-div-featured-mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+}
